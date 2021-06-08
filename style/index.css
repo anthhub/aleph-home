@@ -21,6 +21,8 @@ main {
   height: 100vh;
 }
 
+
+
 .page h1 {
   margin: 0;
   line-height: 1.5;
@@ -132,4 +134,20 @@ main {
   margin-top: 30px;
   font-size: 14px;
   color: #999;
+}
+
+
+
+.header{
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  border-bottom: #efe7e7 solid .5px;
+}
+
+.header a{
+  height: 25px;
+  width: 25px;
 }

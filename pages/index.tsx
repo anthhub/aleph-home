@@ -1,49 +1,25 @@
-import { useDeno } from "framework/react"
 import React from "react"
-import Logo from "~/components/logo.tsx"
-import useCounter from "~/lib/useCounter.ts"
+import Carousel from "../components/Carousel/index.tsx"
+import useMetadata from "../lib/useMetadata.ts"
+import "./index.css"
 
 export default function Home() {
-  const [count, isSyncing, increase, decrease] = useCounter()
-  const version = useDeno(() => Deno.version.deno)
-
+  const [repo] = useMetadata()
   return (
-    <div className="page">
-      <head>
-        <title>Hello World - Aleph.js</title>
-        <link rel="stylesheet" href="../style/index.css" />
-      </head>
-      <p className="logo">
-        <Logo />
-      </p>
-      <h1>
-        Welcome to use <strong>Aleph.js</strong>!
-      </h1>
-      <p className="links">
-        <a href="https://alephjs.org" target="_blank">
-          Website
-        </a>
-        <span></span>
-        <a href="https://alephjs.org/docs/get-started" target="_blank">
-          Get Started
-        </a>
-        <span></span>
-        <a href="https://alephjs.org/docs" target="_blank">
-          Docs
-        </a>
-        <span></span>
-        <a href="https://github.com/alephjs/aleph.js" target="_blank">
-          Github
-        </a>
-      </p>
-      <div className="counter">
-        <span>Counter:</span>
-        {isSyncing && <em>...</em>}
-        {!isSyncing && <strong>{count}</strong>}
-        <button onClick={decrease}>-</button>
-        <button onClick={increase}>+</button>
+    <div>
+      <div className="page">
+        <Carousel />
+
+        <ul className="list">
+          {repo?.map((item) => (
+            <li key={item.url}>
+              <a href={item.url} target="_blank">
+                {item.name}
+              </a>
+            </li>
+          ))}
+        </ul>
       </div>
-      <p className="copyinfo">Built by Aleph.js in Deno {version}</p>
     </div>
   )
 }

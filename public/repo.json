@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Traefik gateway",
+    "url": "http://traefik.liuma.top/dashboard/#/"
+  },
+  {
+    "name": "Grafana",
+    "url": "http://grafana.liuma.top"
+  },
+  {
+    "name": "Prometheus",
+    "url": "http://prome.liuma.top"
+  },
+  {
+    "name": "Anthhun juejin",
+    "url": "http://rjj.liuma.top"
+  },
+  {
+    "name": "Anthhun juejin backend",
+    "url": "http://njj.liuma.top/blog"
+  },
+  {
+    "name": "WebAssembly app",
+    "url": "http://ytt.liuma.top"
+  },
+  {
+    "name": "fat-json",
+    "url": "https://marketplace.visualstudio.com/items?itemName=anthhub.fat-json"
+  },
+  {
+    "name": "eglint",
+    "url": "https://marketplace.visualstudio.com/items?itemName=anthhub.eglint"
+  }
+]
