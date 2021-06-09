@@ -3,11 +3,11 @@ import "./index.css"
 
 const delay = 3000
 const images = [
-  "/deno.jpeg",
-  "/go.png",
-  "/ruat1.png",
-  "/py.png",
-  "/docker.jpeg",
+  "/image/deno.jpeg",
+  "/image/go.png",
+  "/image/rust.png",
+  "/image/py.png",
+  "/image/docker.jpeg",
 ]
 let cur = 0
 
@@ -47,7 +47,7 @@ function right() {
 
 let timer: undefined | number
 
-export default function sdd() {
+export default function Carousel() {
   useEffect(() => {
     timer = setInterval(() => {
       if (document["webkitHidden"]) {
@@ -59,7 +59,7 @@ export default function sdd() {
   }, [])
 
   return (
-    <div className="block">
+    <div className="carousel">
       <div className="btn" onClick={left}>
         <svg
           viewBox="64 64 896 896"
@@ -76,10 +76,7 @@ export default function sdd() {
       <div className="outer">
         <div className="wrapper">
           <div className="container">
-            <img
-              className="inner"
-              src={images[0]}
-            />
+            <img className="inner" src={images[0]} />
           </div>
         </div>
       </div>
