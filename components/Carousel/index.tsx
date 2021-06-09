@@ -1,15 +1,15 @@
 import React, { useEffect } from "react"
 import "./index.css"
 
-let cur = 0
-
+const delay = 3000
 const images = [
-  "https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3197842941,3401708652&fm=26&gp=0.jpg",
-  "https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2293187164,2343563219&fm=26&gp=0.jpg",
-  "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2306668059,3517955897&fm=26&gp=0.jpg",
-  "https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2184180192,397828861&fm=26&gp=0.jpg",
-  "https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3385281827,865785968&fm=26&gp=0.jpg",
+  "/deno.jpeg",
+  "/go.png",
+  "/ruat1.png",
+  "/py.png",
+  "/docker.jpeg",
 ]
+let cur = 0
 
 function move(cur: number) {
   const parent = document.querySelector(".container")
@@ -27,12 +27,12 @@ function move(cur: number) {
   }
 
   const dom = document.createElement("img")
-  dom.setAttribute("style", `margin-left:${cur * 300}px`)
+  dom.setAttribute("style", `margin-left:${cur * 500}px`)
   dom.setAttribute("src", images[now])
   dom.classList = "inner"
 
   parent.insertBefore(dom, childs[0])
-  parent.setAttribute("style", `transform: translateX(${cur * -300}px);`)
+  parent.setAttribute("style", `transform: translateX(${cur * -500}px);`)
 }
 
 function left() {
@@ -54,7 +54,7 @@ export default function sdd() {
         return
       }
       left()
-    }, 3000)
+    }, delay)
     return () => clearInterval(timer)
   }, [])
 
@@ -65,8 +65,8 @@ export default function sdd() {
           viewBox="64 64 896 896"
           focusable="false"
           data-icon="left"
-          width="1em"
-          height="1em"
+          width="2em"
+          height="2em"
           fill="currentColor"
           aria-hidden="true"
         >
@@ -76,13 +76,10 @@ export default function sdd() {
       <div className="outer">
         <div className="wrapper">
           <div className="container">
-            {images.slice(0, 1).map((image, index) => (
-              <img
-                className="inner"
-                src={image}
-                style={{ marginLeft: 300 * index + "px" }}
-              />
-            ))}
+            <img
+              className="inner"
+              src={images[0]}
+            />
           </div>
         </div>
       </div>
@@ -91,8 +88,8 @@ export default function sdd() {
           viewBox="64 64 896 896"
           focusable="false"
           data-icon="right"
-          width="1em"
-          height="1em"
+          width="2em"
+          height="2em"
           fill="currentColor"
           aria-hidden="true"
         >

@@ -2,13 +2,12 @@
 
 .block {
     display: flex;
-    width: 400px;
-    justify-content: space-between;
     align-items: center;
 }
 
 .btn{
     cursor: pointer;
+    margin: 0 20px;
 }
 
 
@@ -23,7 +22,7 @@
 }
 
 .container {
-    width: 300px;
+    width: 500px;
     height: 300px;
     display: flex;
     transition: transform 1s;
@@ -31,7 +30,7 @@
 }
 
 .inner {
-    width: 300px;
+    width: 500px;
     height: 300px;
 
     transition: transform 1s;

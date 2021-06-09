@@ -7,18 +7,20 @@
   font-size: 100%;
   vertical-align: baseline;
   background: transparent;
+
 }
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial sans-serif;
   font-size: 16px;
+  background :#f9ffff;
 }
 
 main {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 
@@ -85,50 +87,6 @@ main {
   transition: border-color 0.15s ease-in;
 }
 
-.counter:hover {
-  border-color: #ccc;
-}
-
-.counter em {
-  display: inline-block;
-  width: 48px;
-  font-weight: 400;
-  text-align: center;
-  color: #999;
-}
-
-.counter strong {
-  display: inline-block;
-  width: 48px;
-  font-weight: 600;
-  text-align: center;
-}
-
-.counter button {
-  display: line-flex;
-  align-items: center;
-  justify-content: center;
-  width: 20px;
-  height: 20px;
-  border-radius: 4px;
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
-  line-height: 1;
-  font-size: 12px;
-  font-family: Courier, monospace;
-  font-weight: 600;
-  color: #666;
-  transition: color 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
-  cursor: pointer;
-}
-
-.counter button:hover {
-  color: #111;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
-}
-
-.counter button + button {
-  margin-left: 9px;
-}
 
 .page .copyinfo {
   margin-top: 30px;
@@ -144,10 +102,33 @@ main {
   justify-content: space-between;
   align-items: center;
   padding: 0px 20px;
-  border-bottom: #efe7e7 solid .5px;
+  background :#fff;
+  /* border-bottom: #efe7e7 solid .5px; */
 }
 
 .header a{
   height: 25px;
   width: 25px;
+}
+
+.shoulder{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60px;
+}
+
+.spin{
+  cursor: pointer;
+  animation: loadingCircle 3s infinite linear;
+}
+
+.spin:hover {
+	animation-play-state: paused;
+}
+
+
+@keyframes loadingCircle{
+    from{transform: rotate(0deg)}
+    to{transform: rotate(360deg)}
 }
