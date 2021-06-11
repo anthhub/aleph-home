@@ -9,7 +9,7 @@ image:
   # pullPolicy: IfNotPresent
 
 pod:
-  replicas: 2
+  replicas: 3
 
 service:
   # type: NodePort
