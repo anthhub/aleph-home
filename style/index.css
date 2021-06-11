@@ -73,19 +73,6 @@ main {
   border-bottom-color: transparent;
 }
 
-.counter {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 270px;
-  height: 48px;
-  margin: 30px auto 0;
-  border: 1px solid #eee;
-  border-radius: 6px;
-  transition: border-color 0.15s ease-in;
-}
-
-
 .page .copyinfo {
   margin-top: 30px;
   font-size: 14px;

@@ -1,0 +1,9 @@
+node_modules/
+logs/
+.github/
+.vscode/
+test/
+package-lock.json
+.cache/
+dist/
+.aleph
