@@ -1,3 +1,7 @@
+:root {
+  --box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,13 +11,12 @@
   font-size: 100%;
   vertical-align: baseline;
   background: transparent;
-
 }
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial sans-serif;
   font-size: 16px;
-  background :#f9ffff;
+  background: #f7f6fb0a;
 }
 
 main {
@@ -23,95 +26,76 @@ main {
   /* height: 100vh; */
 }
 
-.page h1 {
-  margin: 0;
-  line-height: 1.5;
-  font-size: 18px;
-  font-weight: 400;
-  text-align: center;
-  color: #000;
+h1 {
+  color: #000000d9;
+  font-weight: 500;
+  font-size: 30px;
+  font-family: Avenir, -apple-system, BlinkMacSystemFont, segoe ui, Roboto,
+    helvetica neue, Arial, noto sans, sans-serif, apple color emoji,
+    segoe ui emoji, segoe ui symbol, noto color emoji, sans-serif;
+  line-height: 38px;
 }
 
-.page h1 strong {
-  font-weight: 700;
+h2 {
+  font-size: 24px;
+  line-height: 32px;
 }
 
-.page p {
-  margin: 0;
-  line-height: 1.5;
-  text-align: center;
-  color: #333;
-}
-
-.logo + p {
-  margin-top: 6px;
-}
-
-.links span,
-.links a {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.links span {
-  color: #999;
-}
-
-.links span::after {
-  content: '·';
-}
-
-.links a {
-  margin: 0 9px;
-  color: #777;
+a {
   text-decoration: none;
-  border-bottom: 1px dashed #ccc;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  transition: color 0.3s;
+  -webkit-text-decoration-skip: objects;
+  color: #000000d9;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  transition: all 0.3s;
 }
 
-.links a:hover {
-  color: #333;
-  border-bottom-color: transparent;
+a:hover {
+  color: #1890ff;
 }
 
-.page .copyinfo {
-  margin-top: 30px;
-  font-size: 14px;
-  color: #999;
-}
-
-.header{
+.header {
   height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0px 20px;
-  background :#fff;
+  background: #fff;
+  box-shadow: var(--box-shadow);
+
   /* border-bottom: #efe7e7 solid .5px; */
 }
 
-.header a{
+.header a {
   height: 25px;
   width: 25px;
 }
 
-.header .shoulder{
+.header .shoulder {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 60px;
 }
 
-.header .spin{
+.header .spin {
   cursor: pointer;
   animation: loadingCircle 3s infinite linear;
 }
 
 .header .spin:hover {
-	animation-play-state: paused;
+  animation-play-state: paused;
 }
 
-
-@keyframes loadingCircle{
-    from{transform: rotate(0deg)}
-    to{transform: rotate(360deg)}
+@keyframes loadingCircle {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

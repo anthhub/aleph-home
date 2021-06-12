@@ -7,9 +7,12 @@ import Article from "../components/Article/index.tsx"
 export default function Home() {
 
   return (
-      <div className="page home">
-        <Carousel />
-        <Article/>
+    <div className="page home">
+      <Carousel />
+      <Article />
+      <footer className="footer">
+        <small>更多源码, 请移步 GitHub...</small>
+      </footer>
     </div>
   )
 }

@@ -17,7 +17,7 @@ export default function App({
         <header className="header">
           <h1>
             <a href="http://liuma.top">
-              <strong>{"Anthhub's Home"} </strong>
+              {"Anthhub's Home"}
             </a>
           </h1>
 

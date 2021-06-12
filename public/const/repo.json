@@ -56,7 +56,7 @@
         {
             "name": "Anthhub Juejin",
             "url": "http://rjj.liuma.top",
-            "desc": "react+nest+mongodb 仿掘金网",
+            "desc": "react+ typescript 仿掘金网",
             "github": "https://github.com/anthhub/react-mini-blog",
             "tags": [
                 "react",
@@ -118,7 +118,7 @@
         {
             "name": "Tutu Makeup Miniapp",
             "url": "https://github.com/anthhub/makeup-photo-flask",
-            "desc": "",
+            "desc": "TensorFlow + Pytorch 实现 AI 美妆小程序",
             "github": "https://github.com/anthhub/makeup-photo-flask",
             "tags": [
                 "miniapp",
