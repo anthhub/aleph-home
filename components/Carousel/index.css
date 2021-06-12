@@ -23,16 +23,16 @@
 }
 
 .carousel .container {
-    width: 500px;
-    height: 300px;
+    width: 1000px;
+    height: 600px;
     display: flex;
     transition: transform 1s;
     position: relative;
 }
 
 .carousel .inner {
-    width: 500px;
-    height: 300px;
+    width: 1000px;
+    height: 600px;
 
     transition: transform 1s;
     position: absolute;

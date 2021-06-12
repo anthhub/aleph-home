@@ -44,6 +44,7 @@ export default function Article() {
           </div>
         )
       })}
+      <small>更多项目源码, 请移步 GitHub...</small>
     </div>
   )
 }

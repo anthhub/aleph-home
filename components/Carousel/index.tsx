@@ -27,12 +27,12 @@ function move(cur: number) {
   }
 
   const dom = document.createElement("img")
-  dom.setAttribute("style", `margin-left:${cur * 500}px`)
+  dom.setAttribute("style", `margin-left:${cur * 1000}px`)
   dom.setAttribute("src", images[now])
   dom.classList = "inner"
 
   parent.insertBefore(dom, childs[0])
-  parent.setAttribute("style", `transform: translateX(${cur * -500}px);`)
+  parent.setAttribute("style", `transform: translateX(${cur * -1000}px);`)
 }
 
 function left() {
