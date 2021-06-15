@@ -1,40 +1,36 @@
-
-
 .carousel {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.carousel .btn{
-    cursor: pointer;
-    margin: 0 20px;
+.carousel .btn {
+  cursor: pointer;
+  margin: 0 20px;
 }
-
 
 .carousel .outer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .carousel .wrapper {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .carousel .container {
-    width: 1000px;
-    height: 600px;
-    display: flex;
-    transition: transform 1s;
-    position: relative;
+  width: 1000px;
+  height: 600px;
+  display: flex;
+  transition: transform 1s;
+  position: relative;
 }
 
 .carousel .inner {
-    width: 1000px;
-    height: 600px;
+  width: 1000px;
+  height: 600px;
 
-    transition: transform 1s;
-    position: absolute;
+  transition: transform 1s;
+  position: absolute;
 }
-

@@ -12,6 +12,13 @@
 
 .article .item {
   margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.article .item:hover {
+  background-color: #f5df5817;
+  box-shadow: var(--box-shadow);
 }
 
 .article .tag {
