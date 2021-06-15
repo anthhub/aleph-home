@@ -9,7 +9,7 @@ const colors = ['#f50', '#2db7f5', '#87d068', '#108ee9', "#fcaf17", "#f36c21", '
 
 
 function getColor() {
-  const i = Math.round(Math.random() * colors.length)
+  const i = Math.round(Math.random() * (colors.length - 1))
   return colors[i]
 }
 
