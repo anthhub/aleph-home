@@ -6,7 +6,8 @@
 
 .carousel .btn {
   cursor: pointer;
-  margin: 0 20px;
+  margin: 0px 20px;
+  z-index: 999;
 }
 
 .carousel .outer {
@@ -33,4 +34,18 @@
 
   transition: transform 1s;
   position: absolute;
+}
+
+@media screen and (max-width: 1000px) {
+  .carousel .inner {
+    width: 100vw;
+    height: 60vw;
+  }
+  .carousel .container {
+    width: 100vw;
+    height: 60vw;
+  }
+  .carousel .btn {
+    margin: 0px -2em;
+  }
 }

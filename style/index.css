@@ -34,11 +34,25 @@ h1 {
     helvetica neue, Arial, noto sans, sans-serif, apple color emoji,
     segoe ui emoji, segoe ui symbol, noto color emoji, sans-serif;
   line-height: 38px;
+  padding: 0 5px;
 }
 
 h2 {
+  color: #000000d9;
   font-size: 24px;
+  font-family: Avenir, -apple-system, BlinkMacSystemFont, segoe ui, Roboto,
+    helvetica neue, Arial, noto sans, sans-serif, apple color emoji,
+    segoe ui emoji, segoe ui symbol, noto color emoji, sans-serif;
   line-height: 40px;
+}
+
+h3 {
+  color: #000000d9;
+  font-size: 20px;
+  font-family: Avenir, -apple-system, BlinkMacSystemFont, segoe ui, Roboto,
+    helvetica neue, Arial, noto sans, sans-serif, apple color emoji,
+    segoe ui emoji, segoe ui symbol, noto color emoji, sans-serif;
+  line-height: 20px;
 }
 
 a {

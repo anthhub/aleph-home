@@ -56,7 +56,6 @@
             "desc": [
                 "kubernetes-dashboard + helm + k3d 部署集群资源管理",
                 "必须使用 https 访问, 并信任此网站 (输入: thisisunsafe)",
-                "defaut token: eyJhbGciOiJSUzI1NiIsImtpZCI6ImtDMWNZcF9tOW9yYW9jOHJLblZQZUdlVGxSRTZzR0tsVHZUWkVNbFJScXMifQ.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlcm5ldGVzLWRhc2hib2FyZCIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJkZWZhdWx0LXRva2VuLWQ5N2dtIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQubmFtZSI6ImRlZmF1bHQiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC51aWQiOiIwNGM4MGM0My1lY2EyLTQzM2MtODUzNi02ZDkyY2MxMjI4NTkiLCJzdWIiOiJzeXN0ZW06c2VydmljZWFjY291bnQ6a3ViZXJuZXRlcy1kYXNoYm9hcmQ6ZGVmYXVsdCJ9.iVyeuG4NwqywrUoDY5DgOSnb-MA-e2_Il6RKz5GHlcIznCtXSmmOgW_o5bLf2uKBo567AhwkVXdIwJz06PLQCzAjgoxx1vOXnAzt1smKlKfQuxsKR5qoTVhRbTS-VKbNxkySKOFPvFMnNpdO-FXkzwH2QERtjiZcM6aA4ZH9whZKV-Rs4WHOkd8l9B32kCWmmOgsvAy9HGiIolgiYuZ0fI2q2s-_URvekx8WknjT6Y_ZdW9QKy_uMZJ5beus8a4hBgTZ35CFwL5QaIsVvuruBhcAbiySiAkmqvVWAIQha4eKb3moM1Iujw_t2Y0sx-aqa3PZgEROfBT-xXGMQuMOew",
                 "admin token 请当面询问... [奸笑]"
             ],
             "tags": [

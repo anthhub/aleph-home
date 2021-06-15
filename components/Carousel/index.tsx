@@ -12,7 +12,10 @@ const images = [
 let cur = 0
 
 function move(cur: number) {
+  getDeviceWH()
   const parent = document.querySelector(".container")
+
+  const DW = parent.getBoundingClientRect()
 
   const childs = document.querySelectorAll(".inner")
   setTimeout(() => {
@@ -27,12 +30,12 @@ function move(cur: number) {
   }
 
   const dom = document.createElement("img")
-  dom.setAttribute("style", `margin-left:${cur * 1000}px`)
+  dom.setAttribute("style", `margin-left:${cur * DW.width}px`)
   dom.setAttribute("src", images[now])
   dom.classList = "inner"
 
   parent.insertBefore(dom, childs[0])
-  parent.setAttribute("style", `transform: translateX(${cur * -1000}px);`)
+  parent.setAttribute("style", `transform: translateX(${cur * -DW.width}px);`)
 }
 
 function left() {
@@ -47,7 +50,14 @@ function right() {
 
 let timer: undefined | number
 
+
+function getDeviceWH() {
+  return { with: document.body.clientWidth }
+}
+
 export default function Carousel() {
+
+
   useEffect(() => {
     timer = setInterval(() => {
       if (document["webkitHidden"]) {
@@ -96,3 +106,4 @@ export default function Carousel() {
     </div>
   )
 }
+

@@ -15,11 +15,11 @@ export default function App({
       </head>
       <div>
         <header className="header">
-          <h2>
+          <h3>
             <a href="http://liuma.top">
               {"Anthhub's Home"}
             </a>
-          </h2>
+          </h3>
 
           <div className="shoulder">
             <img

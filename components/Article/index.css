@@ -1,13 +1,14 @@
 .article {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+  padding: 10px;
 }
 
 .article .paragraph {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .article .list {
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 
 .article .item {
@@ -56,7 +57,12 @@
 .article .desc {
   max-width: 900px;
   line-height: 1.7;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  word-break: break-word;
+  white-space: normal;
+}
+
+@media screen and (max-width: 1000px) {
+  .article .desc {
+    max-width: calc(100vw - 40px);
+  }
 }
