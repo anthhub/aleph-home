@@ -56,7 +56,7 @@
             "desc": [
                 "kubernetes-dashboard + helm + k3d 部署集群资源管理",
                 "必须使用 https 访问, 并信任此网站 (输入: thisisunsafe)",
-                "defau1 token: eyJhbGciOiJSUzI1NiIsImtpZCI6ImtDMWNZcF9tOW9yYW9jOHJLblZQZUdlVGxSRTZzR0tsVHZUWkVNbFJScXMifQ.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlcm5ldGVzLWRhc2hib2FyZCIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJkZWZhdWx0LXRva2VuLWQ5N2dtIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQubmFtZSI6ImRlZmF1bHQiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC51aWQiOiIwNGM4MGM0My1lY2EyLTQzM2MtODUzNi02ZDkyY2MxMjI4NTkiLCJzdWIiOiJzeXN0ZW06c2VydmljZWFjY291bnQ6a3ViZXJuZXRlcy1kYXNoYm9hcmQ6ZGVmYXVsdCJ9.iVyeuG4NwqywrUoDY5DgOSnb-MA-e2_Il6RKz5GHlcIznCtXSmmOgW_o5bLf2uKBo567AhwkVXdIwJz06PLQCzAjgoxx1vOXnAzt1smKlKfQuxsKR5qoTVhRbTS-VKbNxkySKOFPvFMnNpdO-FXkzwH2QERtjiZcM6aA4ZH9whZKV-Rs4WHOkd8l9B32kCWmmOgsvAy9HGiIolgiYuZ0fI2q2s-_URvekx8WknjT6Y_ZdW9QKy_uMZJ5beus8a4hBgTZ35CFwL5QaIsVvuruBhcAbiySiAkmqvVWAIQha4eKb3moM1Iujw_t2Y0sx-aqa3PZgEROfBT-xXGMQuMOew",
+                "defaut token: eyJhbGciOiJSUzI1NiIsImtpZCI6ImtDMWNZcF9tOW9yYW9jOHJLblZQZUdlVGxSRTZzR0tsVHZUWkVNbFJScXMifQ.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlcm5ldGVzLWRhc2hib2FyZCIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJkZWZhdWx0LXRva2VuLWQ5N2dtIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQubmFtZSI6ImRlZmF1bHQiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC51aWQiOiIwNGM4MGM0My1lY2EyLTQzM2MtODUzNi02ZDkyY2MxMjI4NTkiLCJzdWIiOiJzeXN0ZW06c2VydmljZWFjY291bnQ6a3ViZXJuZXRlcy1kYXNoYm9hcmQ6ZGVmYXVsdCJ9.iVyeuG4NwqywrUoDY5DgOSnb-MA-e2_Il6RKz5GHlcIznCtXSmmOgW_o5bLf2uKBo567AhwkVXdIwJz06PLQCzAjgoxx1vOXnAzt1smKlKfQuxsKR5qoTVhRbTS-VKbNxkySKOFPvFMnNpdO-FXkzwH2QERtjiZcM6aA4ZH9whZKV-Rs4WHOkd8l9B32kCWmmOgsvAy9HGiIolgiYuZ0fI2q2s-_URvekx8WknjT6Y_ZdW9QKy_uMZJ5beus8a4hBgTZ35CFwL5QaIsVvuruBhcAbiySiAkmqvVWAIQha4eKb3moM1Iujw_t2Y0sx-aqa3PZgEROfBT-xXGMQuMOew",
                 "admin token 请当面询问... [奸笑]"
             ],
             "tags": [
@@ -70,14 +70,15 @@
             ]
         }
     ],
-    "Online Application": [
+    "Creative Application": [
         {
             "name": "Deno SSR",
             "url": "http://liuma.top",
             "desc": [
                 "Deno 服务端渲染网站, 即本站点; 使用 docker + helm + k3d 部署",
                 "使用 deno 类 react 框架 aleph; 前后端 react 同构",
-                "多图片 vs 单元素实现轮播图"
+                "多图片 vs 单元素实现轮播图",
+                "使用 docker + helm + k3d 部署, 可轻松实现负责均衡, 滚动更新, 资源限制等"
             ],
             "github": "https://github.com/anthhub/home",
             "tags": [
@@ -162,7 +163,7 @@
             "name": "Qunar Backend in Go",
             "url": "http://gtt.liuma.top/api/cities",
             "desc": [
-                "Go gin 框架实现后端服务, 相应时间极快, go-mod 管理依赖",
+                "Go gin 框架实现后端服务, 请求响应极快, go-mod 管理依赖",
                 "使用 go-pinyin 库实现中文分词搜索",
                 "使用 docker + helm + k3d 部署, 可轻松实现负责均衡, 滚动更新, 资源限制等"
             ],
@@ -178,13 +179,15 @@
             "name": "Tutu Makeup Miniapp",
             "url": "https://github.com/anthhub/makeup-photo-flask",
             "desc": [
-                "Hackathon参赛作品: AI 美妆小程序后端; 微信搜索:[图图应用] (因为环境问题, 后端接口访问会失败, 效果可参看 gif)",
-                "TensorFlow/Pytorch 实现 ",
-                "合作的前端项目和 README: https://github.com/wussss/Hackathon-TuTu"
+                "Hackathon 参赛作品: AI 美妆小程序后端",
+                "微信搜索:[图图应用] (因为环境问题, 后端接口访问会失败, 效果可参看 gif)",
+                "TensorFlow/Pytorch 使用 GAN 网络实现 AI 仿妆和动漫风格照片",
+                "合作的前端项目见 : https://github.com/wussss/Hackathon-TuTu"
             ],
             "github": "https://github.com/anthhub/makeup-photo-flask",
             "tags": [
                 "miniapp",
+                "GAN",
                 "AI",
                 "Neural Networks",
                 "TensorFlow",
@@ -194,14 +197,37 @@
                 "opencv",
                 "docker"
             ]
+        },
+        {
+            "name": "My Instagram",
+            "url": "https://juejin.cn/post/6844904016321708046",
+            "desc": [
+                "midwayjs + mysql 仿 instagram 后端服务",
+                "第一次 nodejs 实践"
+            ],
+            "github": "https://github.com/anthhub/instagram-midway-react",
+            "tags": [
+                "midwayjs",
+                "nodejs",
+                "typescript",
+                "mysql",
+                "sequelize"
+            ]
         }
     ],
     "Engineering Library": [
         {
-            "name": "Matrox",
+            "name": "Matrox (JS Stack)",
             "url": "https://www.npmjs.com/package/matrox",
             "desc": [
-                "结合 mobx 和 redux 特性的前端状态管理库"
+                "结合 mobx 和 redux 特性的前端状态管理库",
+                "两个 API, 符合直觉, 几乎无需学习成本",
+                "支持类 redux 中间件, 方便拓展, 轻松实现时间旅行",
+                "支持类 mobx 依赖收集(使用 Proxy API), 类 react state 合并和批量更新, 优化性能",
+                "支持 store 数据的预加载和持久化",
+                "完美的 TypeScript 支持",
+                "支持 function(hooks) 和 class(decorator) 组件",
+                "轻松支持 store 多例模式"
             ],
             "github": "https://github.com/anthhub/matrox",
             "tags": [
@@ -215,10 +241,13 @@
             ]
         },
         {
-            "name": "Millet",
+            "name": "Millet (JS Stack)",
             "url": "https://www.npmjs.com/package/millet",
             "desc": [
-                "基于 Koa 中间件的通用中间件工具库"
+                "基于 Koa 中间件的通用中间件工具库, 需求来源于微信小程序获取最新 token",
+                "支持中间件提前终止",
+                "支持任务重试和限流(见example)",
+                "完美的 TypeScript 支持"
             ],
             "github": "https://github.com/anthhub/millet",
             "tags": [
@@ -230,10 +259,11 @@
             ]
         },
         {
-            "name": "Taskgroup",
+            "name": "Taskgroup (GO Stack)",
             "url": "https://pkg.go.dev/github.com/anthhub/taskgroup",
             "desc": [
-                "goroutine 通用并发控制库"
+                "goroutine 通用并发控制库",
+                "支持 context 控制, goroutine 限流, 自定义最大错误数, 内置 goroutine recover, 轻松构建生产者-消费者模式"
             ],
             "github": "https://github.com/anthhub/taskgroup",
             "tags": [
@@ -246,24 +276,27 @@
             ]
         },
         {
-            "name": "Cupboard",
+            "name": "Cupboard (GO Stack)",
             "url": "https://pkg.go.dev/github.com/anthhub/cupboard",
             "desc": [
-                "程序化控制 docker 容器生命周期工具库"
+                "程序化控制 docker 容器生命周期工具库; 可以在测试阶段代替 docker-compose 来启动多个容器",
+                "支持多容器创建, 自动镜像拉取, 重名容器覆盖, 传入环境变量, 结束销毁容器等功能"
             ],
             "github": "https://github.com/anthhub/cupboard",
             "tags": [
                 "docker",
+                "docker-compose",
                 "container",
                 "Go",
                 "test"
             ]
         },
         {
-            "name": "Forwarder",
+            "name": "Forwarder (GO Stack)",
             "url": "https://pkg.go.dev/github.com/anthhub/forwarder",
             "desc": [
-                "程序化控 k8s 集群服务装发工具库"
+                "程序化控 k8s 集群服务装发工具库; 可以在自测阶段代替 k8s portforward 命令",
+                "目前只能 portforward pods; portforward service 还在开发中..."
             ],
             "github": "https://github.com/anthhub/forwarder",
             "tags": [
@@ -280,7 +313,8 @@
             "name": "fat-json",
             "url": "https://marketplace.visualstudio.com/items?itemName=anthhub.fat-json",
             "desc": [
-                "使用 Rust 极速格式化超大 JSON"
+                "使用 Rust 极速格式化超大 JSON, 谁用谁知道",
+                "Rust 程序流式方式格式化 JSON, 无校验 JSON 功能[奸笑]"
             ],
             "github": "https://github.com/anthhub/vscode-fat-json",
             "tags": [
@@ -295,7 +329,8 @@
             "name": "eglint",
             "url": "https://marketplace.visualstudio.com/items?itemName=anthhub.eglint",
             "desc": [
-                "检查和提示英语句子语法"
+                "检查和提示 VScode 英语句子语法",
+                "由于时间原因, 使用的是正则表达式匹配; 后续计划改为使用 VScode 语言服务器"
             ],
             "github": "https://github.com/anthhub/vscode-eglint",
             "tags": [

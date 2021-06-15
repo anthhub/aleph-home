@@ -26,7 +26,7 @@ export default function Article() {
         return (
           <div className="paragraph">
             <h1>{key}</h1>
-            <ul className="list">
+            <ol className="list">
               {arr?.map((item) => (
                 <li key={item.name} className="item">
                   <p>
@@ -41,14 +41,18 @@ export default function Article() {
                   </p>
                   <p>
                     <a href={item.url} title="go to website" target="_blank">
-                      {item?.desc?.map((desc) => <>
-                        <p key={desc} className="desc">{desc}</p>
-                      </>)}
+                      <ul className="desc-ul">
+                        {item?.desc?.map((desc) =>
+                          <li key={desc} >
+                            <p className="desc" >{desc}</p>
+                          </li>
+                        )}
+                      </ul>
                     </a>
                   </p>
                 </li>
               ))}
-            </ul>
+            </ol>
           </div>
         )
       })}
