@@ -15,17 +15,15 @@ export default function App({
       </head>
       <div>
         <header className="header">
-          <h1>
+          <h2>
             <a href="http://liuma.top">
               {"Anthhub's Home"}
             </a>
-          </h1>
+          </h2>
 
           <div className="shoulder">
             <img
               onClick={() => {
-                console.log(111111)
-
                 location.reload()
               }}
               className="spin"

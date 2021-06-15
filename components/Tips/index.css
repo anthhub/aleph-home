@@ -1,0 +1,5 @@
+.tips small {
+  font-size: 5px;
+  font-style: italic;
+  transition: color 1s;
+}

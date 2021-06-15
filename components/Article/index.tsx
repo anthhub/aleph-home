@@ -1,6 +1,9 @@
-import React, { useEffect } from "react"
+import React from "react"
 import useMetadata from "../../lib/useMetadata.ts"
+import Tips from "../Tips/index.tsx"
+
 import "./index.css"
+
 
 const colors = ['#f50', '#2db7f5', '#87d068', '#108ee9', "#fcaf17", "#f36c21", '#b2d235', '#ef5b9c', '#c77eb5']
 
@@ -11,6 +14,7 @@ function getColor() {
 }
 
 export default function Article() {
+
   const [repo] = useMetadata()
 
   return (
@@ -44,7 +48,8 @@ export default function Article() {
           </div>
         )
       })}
-      <small>更多项目源码, 请移步 GitHub...</small>
+      
+      <Tips />
     </div>
   )
 }

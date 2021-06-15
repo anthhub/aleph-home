@@ -2,3 +2,9 @@
   display: flex;
   justify-content: center;
 }
+
+.home {
+  overflow-y: scroll;
+  max-height: calc(100vh - 50px);
+  width: 100vw;
+}
