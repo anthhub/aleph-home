@@ -39,4 +39,10 @@
   padding: 0 6px;
 }
 
-
+.article p.desc {
+  max-width: 1000px;
+  line-height: 1.7;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

@@ -17,6 +17,8 @@ export default function Article() {
 
   const [repo] = useMetadata()
 
+
+
   return (
     <div className="article">
       {Object.keys(repo).map((key) => {
@@ -25,7 +27,7 @@ export default function Article() {
           <div className="paragraph">
             <h1>{key}</h1>
             <ul className="list">
-              {arr.map((item) => (
+              {arr?.map((item) => (
                 <li key={item.name} className="item">
                   <p>
                     <a href={item.github} title="go to github" target="_blank">
@@ -39,7 +41,9 @@ export default function Article() {
                   </p>
                   <p>
                     <a href={item.url} title="go to website" target="_blank">
-                      {item.desc}
+                      {item?.desc?.map((desc) => <>
+                        <p key={desc} className="desc">{desc}</p>
+                      </>)}
                     </a>
                   </p>
                 </li>
@@ -48,7 +52,7 @@ export default function Article() {
           </div>
         )
       })}
-      
+
       <Tips />
     </div>
   )
