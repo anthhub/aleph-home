@@ -15,9 +15,7 @@ function getColor() {
 
 export default function Article() {
 
-  const [repo] = useMetadata()
-
-
+  const { repo } = useMetadata()
 
   return (
     <div className="article">

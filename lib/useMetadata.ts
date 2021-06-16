@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react"
 import { Repo } from "../api/metadata/index.ts"
 
-export default function useMetadata(): [Repo[], boolean] {
-  const [repo, setRepo] = useState([])
-  const [isSyncing, setIsSyncing] = useState(true)
+export default function useMetadata() {
+  const [repo, setRepo] = useState<Repo[]>([])
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
     fetch("/api/metadata")
@@ -13,9 +13,9 @@ export default function useMetadata(): [Repo[], boolean] {
       })
       .catch((e) => console.error(e))
       .finally(() => {
-        setIsSyncing(false)
+        setLoading(false)
       })
   }, [])
 
-  return [repo, isSyncing]
+  return {repo, loading}
 }

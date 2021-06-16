@@ -1,6 +1,24 @@
 {
     "Cluster Management": [
         {
+            "name": "Kubernetes Dashboard",
+            "url": "https://106.15.90.38:31111/",
+            "desc": [
+                "kubernetes-dashboard + helm + k3d 部署集群资源管理",
+                "必须使用 https 访问, 并信任此网站 (输入: thisisunsafe)",
+                "admin token 请当面询问... [奸笑]"
+            ],
+            "tags": [
+                "k3d",
+                "k3s",
+                "k8s",
+                "Go",
+                "kubernetes",
+                "helm",
+                "cluster"
+            ]
+        },
+        {
             "name": "Traefik Gateway",
             "url": "http://traefik.liuma.top/dashboard/#/",
             "desc": [
@@ -9,6 +27,7 @@
                 "支持 http/https(自签名)"
             ],
             "tags": [
+                "gateway",
                 "route",
                 "proxy",
                 "k3d",
@@ -45,24 +64,7 @@
                 "Go",
                 "k3d",
                 "k8s",
-                "kubernetes",
-                "helm",
-                "cluster"
-            ]
-        },
-        {
-            "name": "Kubernetes Dashboard",
-            "url": "https://106.15.90.38:31111/",
-            "desc": [
-                "kubernetes-dashboard + helm + k3d 部署集群资源管理",
-                "必须使用 https 访问, 并信任此网站 (输入: thisisunsafe)",
-                "admin token 请当面询问... [奸笑]"
-            ],
-            "tags": [
-                "prometheus",
-                "Go",
-                "k3d",
-                "k8s",
+                "exporter",
                 "kubernetes",
                 "helm",
                 "cluster"
@@ -155,6 +157,7 @@
             "tags": [
                 "actix-web",
                 "Rust",
+                "cargo",
                 "docker"
             ]
         },
@@ -178,13 +181,15 @@
             "name": "Tutu Makeup Miniapp",
             "url": "https://github.com/anthhub/makeup-photo-flask",
             "desc": [
-                "Hackathon 参赛作品: AI 美妆小程序后端",
+                "Hackathon 参赛作品: AI 美妆小程序",
                 "微信搜索:[图图应用] (因为环境问题, 后端接口访问会失败, 效果可参看 gif)",
-                "TensorFlow/Pytorch 使用 GAN 网络实现 AI 仿妆和动漫风格照片",
+                "TensorFlow/Pytorch 使用 GAN 网络实现 AI 照片仿妆和动漫风格照片",
                 "合作的前端项目见 : https://github.com/wussss/Hackathon-TuTu"
             ],
             "github": "https://github.com/anthhub/makeup-photo-flask",
             "tags": [
+                "WX",
+                "wechat",
                 "miniapp",
                 "GAN",
                 "AI",
@@ -193,8 +198,7 @@
                 "Pytorch",
                 "Python",
                 "Flask",
-                "opencv",
-                "docker"
+                "opencv"
             ]
         },
         {
