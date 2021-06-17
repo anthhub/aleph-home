@@ -13,8 +13,16 @@ export default function Tips() {
 
   return (
     <div className="tips" >
-      <small style={{ color }}>更多项目源码, 请移步 GitHub, 或者面基[奸笑]...</small>
-    </div>
+      <a
+        href="https://github.com/anthhub"
+        className="icon"
+        target="_blank"
+      >
+        <small style={{ color }}>
+          更多项目源码, 请移步 GitHub, 或者面基[奸笑]...
+        </small>
+      </a>
+    </div >
   )
 }
 

@@ -205,8 +205,7 @@
             "name": "My Instagram",
             "url": "https://juejin.cn/post/6844904016321708046",
             "desc": [
-                "midwayjs + mysql 仿 instagram 后端服务",
-                "第一次 nodejs 实践"
+                "midwayjs + mysql 仿 instagram 后端服务"
             ],
             "github": "https://github.com/anthhub/instagram-midway-react",
             "tags": [
@@ -220,7 +219,7 @@
     ],
     "Engineering Library": [
         {
-            "name": "Matrox (JS Stack)",
+            "name": "Matrox",
             "url": "https://www.npmjs.com/package/matrox",
             "desc": [
                 "结合 mobx 和 redux 特性的前端状态管理库",
@@ -244,7 +243,7 @@
             ]
         },
         {
-            "name": "Millet (JS Stack)",
+            "name": "Millet",
             "url": "https://www.npmjs.com/package/millet",
             "desc": [
                 "基于 Koa 中间件的通用中间件工具库, 需求来源于微信小程序获取最新 token",
@@ -262,7 +261,7 @@
             ]
         },
         {
-            "name": "Taskgroup (GO Stack)",
+            "name": "Taskgroup",
             "url": "https://pkg.go.dev/github.com/anthhub/taskgroup",
             "desc": [
                 "goroutine 通用并发控制库",
@@ -279,7 +278,7 @@
             ]
         },
         {
-            "name": "Cupboard (GO Stack)",
+            "name": "Cupboard",
             "url": "https://pkg.go.dev/github.com/anthhub/cupboard",
             "desc": [
                 "程序化控制 docker 容器生命周期工具库; 可以在测试阶段代替 docker-compose 来启动多个容器",
@@ -295,10 +294,10 @@
             ]
         },
         {
-            "name": "Forwarder (GO Stack)",
+            "name": "Forwarder",
             "url": "https://pkg.go.dev/github.com/anthhub/forwarder",
             "desc": [
-                "程序化控 k8s 集群服务装发工具库; 可以在自测阶段代替 k8s portforward 命令",
+                "程序化控 k8s 集群服务转发工具库; 可以在自测阶段代替 k8s portforward 命令",
                 "目前只能 portforward pods; portforward service 还在开发中..."
             ],
             "github": "https://github.com/anthhub/forwarder",

@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import useMetadata from "../../lib/useMetadata.ts"
 import Tips from "../Tips/index.tsx"
 
@@ -14,8 +14,26 @@ function getColor() {
 }
 
 export default function Article() {
+  const { repo, loading } = useMetadata()
 
-  const { repo } = useMetadata()
+  useEffect(() => {
+    const hash = (location.hash || "").replace(/^\#/, '')
+    if (!loading || !hash) {
+      return
+    }
+
+    const home = document.querySelector(".home")
+
+    setTimeout(() => {
+      const dom = document.querySelector("#" + hash)
+      if (!home || !dom) {
+        return
+      }
+
+      home.scrollTo(0, dom.offsetTop - 50)
+    }, 100)
+
+  }, [])
 
   return (
     <div className="article">
@@ -26,7 +44,7 @@ export default function Article() {
             <h1>{key}</h1>
             <ol className="list">
               {arr?.map((item) => (
-                <li key={item.name} className="item">
+                <li id={item.name.replaceAll(" ", "")} key={item.name} className={"item"} >
                   <p>
                     <a href={item.github} title="go to github" target="_blank">
                       <h2>{item.name}</h2>
