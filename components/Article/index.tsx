@@ -46,9 +46,13 @@ export default function Article() {
               {arr?.map((item) => (
                 <li id={item.name.replaceAll(" ", "")} key={item.name} className={"item"} >
                   <p>
-                    <a href={item.github} title="go to github" target="_blank">
-                      <h2>{item.name}</h2>
-                    </a>
+                    <h2>
+                      {item.github ? <a href={item.github} title="go to github" target="_blank">
+                        {item.name}
+                      </a> :
+                        item.name
+                      }
+                    </h2>
                   </p>
                   <p>
                     {item?.tags?.map((tag) => (
