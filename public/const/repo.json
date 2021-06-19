@@ -198,6 +198,7 @@
                 "Pytorch",
                 "Python",
                 "Flask",
+                "Anaconda",
                 "opencv"
             ]
         },
