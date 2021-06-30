@@ -12,6 +12,7 @@
 }
 
 .article .item {
+  /* position: relative; */
   margin-bottom: 20px;
   padding: 10px;
   border-radius: 5px;
@@ -61,8 +62,31 @@
   white-space: normal;
 }
 
+.article .desc-over {
+  color: red;
+}
+
+.article .over {
+  position: absolute;
+  top: 55px;
+  right: 0;
+  bottom: 0;
+  visibility: hidden;
+  width: 270px;
+  height: 500px;
+}
+
+.article .over.show {
+  visibility: visible;
+}
+
 @media screen and (max-width: 1000px) {
   .article .desc {
     max-width: calc(100vw - 40px);
+  }
+
+  .article .over {
+    width: 30vw;
+    height: 60vw;
   }
 }

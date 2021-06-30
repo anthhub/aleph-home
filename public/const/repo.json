@@ -133,7 +133,9 @@
             "desc": [
                 "Rust Webassembly 仿去哪儿网",
                 "使用 yew -- Rust 前端类 react 框架, yew-router -- yew 前端路由库, yew-functional -- yew hooks 库等, 编译为 wasm 执行",
-                "使用 docker + nginx + helm + k3d 部署"
+                "使用 docker + nginx + helm + k3d 部署",
+                "Rust actix-web 框架实现后端服务: https://github.com/anthhub/actix-train-ticket",
+                "Go gin 框架实现后端服务, 请求响应极快: https://github.com/anthhub/gin-train-ticket"
             ],
             "github": "https://github.com/anthhub/yew-train-ticket",
             "tags": [
@@ -146,40 +148,7 @@
             ]
         },
         {
-            "name": "Qunar Backend in Rust",
-            "url": "http://att.liuma.top/api/cities",
-            "desc": [
-                "Rust actix-web 框架实现后端服务",
-                "使用 pinyin 库实现中文分词搜索",
-                "使用 docker + helm + k3d 部署, 可轻松实现负责均衡, 滚动更新, 资源限制等"
-            ],
-            "github": "https://github.com/anthhub/actix-train-ticket",
-            "tags": [
-                "actix-web",
-                "Rust",
-                "cargo",
-                "docker"
-            ]
-        },
-        {
-            "name": "Qunar Backend in Go",
-            "url": "http://gtt.liuma.top/api/cities",
-            "desc": [
-                "Go gin 框架实现后端服务, 请求响应极快, go-mod 管理依赖",
-                "使用 go-pinyin 库实现中文分词搜索",
-                "使用 docker + helm + k3d 部署, 可轻松实现负责均衡, 滚动更新, 资源限制等"
-            ],
-            "github": "https://github.com/anthhub/gin-train-ticket",
-            "tags": [
-                "gin",
-                "Go",
-                "go-mod",
-                "docker"
-            ]
-        },
-        {
             "name": "Tutu Makeup Miniapp",
-            "url": "https://github.com/anthhub/makeup-photo-flask",
             "desc": [
                 "Hackathon 参赛作品: AI 美妆小程序",
                 "微信搜索:[图图应用] (因为环境问题, 后端接口访问会失败, 效果可参看 gif)",
@@ -200,22 +169,8 @@
                 "Flask",
                 "Anaconda",
                 "opencv"
-            ]
-        },
-        {
-            "name": "My Instagram",
-            "url": "https://juejin.cn/post/6844904016321708046",
-            "desc": [
-                "midwayjs + mysql 仿 instagram 后端服务"
             ],
-            "github": "https://github.com/anthhub/instagram-midway-react",
-            "tags": [
-                "midwayjs",
-                "nodejs",
-                "typescript",
-                "mysql",
-                "sequelize"
-            ]
+            "over": "http://liuma.top/image/tutu.gif"
         }
     ],
     "Engineering Library": [
@@ -292,22 +247,6 @@
                 "container",
                 "Go",
                 "test"
-            ]
-        },
-        {
-            "name": "Forwarder",
-            "url": "https://pkg.go.dev/github.com/anthhub/forwarder",
-            "desc": [
-                "程序化控 k8s 集群服务转发工具库; 可以在自测阶段代替 k8s portforward 命令",
-                "目前只能 portforward pods; portforward service 还在开发中..."
-            ],
-            "github": "https://github.com/anthhub/forwarder",
-            "tags": [
-                "portforward",
-                "Go",
-                "k8s",
-                "kubernetes",
-                "cluster"
             ]
         }
     ],

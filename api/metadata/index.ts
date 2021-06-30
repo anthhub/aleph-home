@@ -12,4 +12,5 @@ export interface Repo {
   desc: string
   github?: string
   tags: string[]
+  over?: string
 }
