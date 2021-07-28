@@ -1,7 +1,7 @@
 import React, { useEffect } from "react"
 import "./index.css"
 
-const delay = 3000
+let delay = 4000
 const images = [
   "/image/deno.jpeg",
   "/image/go.png",
@@ -22,7 +22,7 @@ function move(cur: number) {
     childs.forEach((item: any) => {
       parent.removeChild(item)
     })
-  }, 1000)
+  }, 2000)
 
   let now = cur % images.length
   if (now < 0) {

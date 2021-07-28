@@ -248,6 +248,25 @@
                 "Go",
                 "test"
             ]
+        },
+        {
+            "name": "Forwarder",
+            "url": "https://pkg.go.dev/github.com/anthhub/forwarder",
+            "desc": [
+                "程序化控制 kubernetes 转发 service/pods; 集群服务本地调试非常有用, 大大提高生产力!!!",
+                "支持多服务转发映射本地端口, 生成和返回随机本地端口"
+            ],
+            "github": "https://github.com/anthhub/forwarder",
+            "tags": [
+                "port-forward",
+                "service",
+                "pods",
+                "cluster",
+                "k8s",
+                "devops",
+                "kubernetes",
+                "Go"
+            ]
         }
     ],
     "VScode Plugin": [
