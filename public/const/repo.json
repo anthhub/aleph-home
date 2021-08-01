@@ -79,7 +79,7 @@
                 "结合 mobx 和 redux 特性的前端状态管理库",
                 "两个 API, 符合直觉, 几乎无需学习成本",
                 "支持类 redux 中间件, 方便拓展, 轻松实现时间旅行",
-                "支持类 mobx 依赖收集(使用 Proxy API), 类 react state 合并和批量更新, 优化性能",
+                "支持类 mobx 依赖收集(使用 Proxy API), 类 setState 合并和批量更新, 优化性能",
                 "支持 store 数据的预加载和持久化",
                 "完美的 TypeScript 支持",
                 "支持 function(hooks) 和 class(decorator) 组件",
@@ -118,7 +118,7 @@
             "name": "Taskgroup",
             "url": "https://pkg.go.dev/github.com/anthhub/taskgroup",
             "desc": [
-                "goroutine 通用并发控制库",
+                "Go goroutine 通用并发控制库",
                 "支持 context 控制, goroutine 限流, 自定义最大错误数, 内置 goroutine recover, 轻松构建生产者-消费者模式"
             ],
             "github": "https://github.com/anthhub/taskgroup",
@@ -135,7 +135,7 @@
             "name": "Cupboard",
             "url": "https://pkg.go.dev/github.com/anthhub/cupboard",
             "desc": [
-                "程序化控制 docker 容器生命周期工具库; 可以在测试阶段代替 docker-compose 来启动多个容器",
+                "Go 程序化控制 docker 容器生命周期工具库; 可以在测试和联调阶段代替 docker-compose 来启动多个容器",
                 "支持多容器创建, 自动镜像拉取, 重名容器覆盖, 传入环境变量, 结束销毁容器等功能"
             ],
             "github": "https://github.com/anthhub/cupboard",
@@ -151,7 +151,7 @@
             "name": "Forwarder",
             "url": "https://pkg.go.dev/github.com/anthhub/forwarder",
             "desc": [
-                "程序化控制 kubernetes 转发 service/pods; 集群服务本地调试非常有用, 大大提高生产力!!!",
+                "Go 程序化控制 kubernetes 通过 service/pods 转发容器服务; 集群服务本地调试, 前后端联调非常有用, 大大提高生产力!!!",
                 "支持多服务转发映射本地端口, 生成和返回随机本地端口"
             ],
             "github": "https://github.com/anthhub/forwarder",
@@ -172,7 +172,7 @@
             "name": "fat-json",
             "url": "https://marketplace.visualstudio.com/items?itemName=anthhub.fat-json",
             "desc": [
-                "使用 Rust 极速格式化超大 JSON, 谁用谁知道",
+                "使用 Typescript + Rust 极速格式化超大 JSON, 谁用谁知道",
                 "Rust 程序流式方式格式化 JSON, 无校验 JSON 功能[奸笑]"
             ],
             "github": "https://github.com/anthhub/vscode-fat-json",
@@ -181,6 +181,7 @@
                 "formatter",
                 "nodejs",
                 "VScode",
+                "typescript",
                 "plugin"
             ]
         },
@@ -188,7 +189,7 @@
             "name": "eglint",
             "url": "https://marketplace.visualstudio.com/items?itemName=anthhub.eglint",
             "desc": [
-                "检查和提示 VScode 英语句子语法",
+                "使用 Typescript 开发检查和提示 VScode 英语句子语法",
                 "由于时间原因, 使用的是正则表达式匹配; 后续计划改为使用 VScode 语言服务器"
             ],
             "github": "https://github.com/anthhub/vscode-eglint",
@@ -196,6 +197,7 @@
                 "English",
                 "grammar",
                 "nodejs",
+                "typescript",
                 "VScode",
                 "plugin"
             ]
@@ -206,8 +208,8 @@
             "name": "Deno SSR",
             "url": "http://liuma.top",
             "desc": [
-                "Deno 服务端渲染网站, 即本站点; 使用 docker + helm + k3d 部署",
-                "使用 deno 类 react 框架 aleph; 前后端 react 同构",
+                "使用 Deno + Typescript 服务端渲染网站, 即本站点; 使用 docker + helm + k3d 部署",
+                "使用 Deno 类 React 框架 Aleph; 前后端 React 同构",
                 "多图片 vs 单元素实现轮播图",
                 "使用 docker + helm + k3d 部署, 可轻松实现负责均衡, 滚动更新, 资源限制等"
             ],
@@ -216,6 +218,7 @@
                 "aleph",
                 "SSR",
                 "deno",
+                "react",
                 "typescript",
                 "docker"
             ]
@@ -224,9 +227,9 @@
             "name": "Anthhub Juejin",
             "url": "http://rjj.liuma.top",
             "desc": [
-                "react + typescript 仿掘金网; 使用 docker + nginx + helm + k3d 部署",
+                "React + Typescript 仿掘金网; 使用 docker + nginx + helm + k3d 部署",
                 "store 使用 useReducer + useContext 自制 redux",
-                "实现掘金大部分功能: 登录注册, 点赞评论, 图片存储, 个人主页, 文章列表, 文章编辑等..."
+                "实现掘金大部分功能: 登录注册, 点赞评论, 图片存储, 个人主页, 文章列表, 富文本编辑等..."
             ],
             "github": "https://juejin.cn/post/6844904016321708046",
             "tags": [
@@ -243,9 +246,9 @@
             "name": "Anthhub Juejin Backend",
             "url": "http://njj.liuma.top/blog",
             "desc": [
-                "nestjs + mongodb 仿掘金网后端服务",
+                "Nestjs + Typescript + Mongodb 仿掘金网后端服务",
                 "使用 docker + helm + k3d 部署, 可轻松实现负责均衡, 滚动更新, 资源限制等",
-                "使用 nestjs 装饰器轻松生成 swagger 文档"
+                "使用 Nestjs 装饰器轻松生成 swagger 文档"
             ],
             "github": "https://github.com/anthhub/nest-mini-blog",
             "tags": [
@@ -261,8 +264,8 @@
             "name": "WebAssembly Qunar website",
             "url": "http://ytt.liuma.top",
             "desc": [
-                "Rust Webassembly 仿去哪儿网",
-                "使用 yew -- Rust 前端类 react 框架, yew-router -- yew 前端路由库, yew-functional -- yew hooks 库等, 编译为 wasm 执行",
+                "Yew(Rust wasm) 仿去哪儿网, 超前使用 hooks, 收录进 Awesome Yew; Actix-web 实现后端",
+                "使用 Yew -- Rust 前端类 React 框架, yew-router -- Yew 前端路由库, yew-functional -- Yew 的 React hooks 库等, 编译为 wasm 执行",
                 "使用 docker + nginx + helm + k3d 部署",
                 "Rust actix-web 框架实现后端服务: https://github.com/anthhub/actix-train-ticket",
                 "Go gin 框架实现后端服务, 请求响应极快: https://github.com/anthhub/gin-train-ticket"
