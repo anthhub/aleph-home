@@ -80,6 +80,10 @@
   visibility: visible;
 }
 
+.article a.article-title:hover {
+  color: #ff4118;
+}
+
 @media screen and (max-width: 1000px) {
   .article .desc {
     max-width: calc(100vw - 40px);

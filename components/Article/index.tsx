@@ -88,7 +88,7 @@ const ItemBlock: React.FC<ItemBlockProps> = ({ item }) => {
       </div>}
       <p>
         <h2>
-          {item.github ? <a href={item.github} title="go to github" target="_blank">
+          {item.github ? <a className="article-title" href={item.github} title="go to github" target="_blank">
             {item.name}
           </a> :
             item.name
